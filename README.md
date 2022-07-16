@@ -1,5 +1,6 @@
-# msp_training
+#Microsoft_Student_Partners_Training
+#Flutter Training
 
-Microsoft student partners tasks and projects
+Solution of MSP Tasks and Projects
 
 
