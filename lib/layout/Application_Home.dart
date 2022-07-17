@@ -22,8 +22,66 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+          child: ListView(
+              children: [
+                const UserAccountsDrawerHeader(
+                  accountName: Text('Mohamed Elsebaey'),
+                  accountEmail: Text('muhammedelsepa3y@gmail.com'),
+                  currentAccountPicture: CircleAvatar(
+                    backgroundImage: NetworkImage(
+                      'https://avatars.githubusercontent.com/u/109048763?v=4',
+                    ),
+                  ),
+                  decoration: BoxDecoration(color: Color(0xff50c878)),
+                ),
+
+
+                ListTile(
+                  leading: Icon(Icons.account_circle),
+                  title: Text(
+                    'My Profile',
+                    style: TextStyle(fontSize: 17),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(Icons.notifications_active),
+                  title: Text(
+                    'Notifications',
+                    style: TextStyle(fontSize: 17),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(Icons.chat),
+                  title: Text(
+                    'Contact',
+                    style: TextStyle(fontSize: 17),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(Icons.error),
+                  title: Text(
+                    'About us',
+                    style: TextStyle(fontSize: 17),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(Icons.logout),
+                  title: Text(
+                    'Log Out',
+                    style: TextStyle(fontSize: 17),
+                  ),
+                ),
+              ]
+          )
+      ),
       appBar: AppBar(
-        title: Text("MSP"),
+        backgroundColor: Color(0xff50c878),
+        title: Text("MSP",
+        style: TextStyle(
+          fontSize: 25,
+          fontWeight: FontWeight.bold
+        ),),
         centerTitle: true,
       ),
       body: Padding(
@@ -37,7 +95,12 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Expanded(
                     child: Container(
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: Color(0xff50c878),
+
+                      ),
+
                       child: MaterialButton(
                         height: 60,
                         onPressed: () {
@@ -47,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                         },
                         child: Text(
                           "Task 1",
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white,fontSize: 20),
                         ),
                       ),
                     ),
@@ -57,7 +120,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Expanded(
                     child: Container(
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: Color(0xff50c878),
+
+                      ),
                       child: MaterialButton(
                         height: 60,
                         onPressed: () {
@@ -67,7 +134,7 @@ class _HomePageState extends State<HomePage> {
                         },
                         child: Text(
                           "Task 2",
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white,fontSize: 20),
                         ),
                       ),
                     ),
@@ -77,7 +144,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Expanded(
                     child: Container(
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: Color(0xff50c878),
+
+                      ),
                       child: MaterialButton(
                         height: 60,
                         onPressed: () {
@@ -87,7 +158,7 @@ class _HomePageState extends State<HomePage> {
                         },
                         child: Text(
                           "Task 3",
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white,fontSize: 20),
                         ),
                       ),
                     ),
@@ -102,7 +173,11 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Expanded(
                     child: Container(
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: Color(0xff50c878),
+
+                      ),
                       child: MaterialButton(
                         height: 60,
                         onPressed: () {
@@ -112,7 +187,7 @@ class _HomePageState extends State<HomePage> {
                         },
                         child: Text(
                           "Project 1",
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white,fontSize: 20),
                         ),
                       ),
                     ),
@@ -122,7 +197,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Expanded(
                     child: Container(
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: Color(0xff50c878),
+
+                      ),
                       child: MaterialButton(
                         height: 60,
                         onPressed: () {
@@ -132,7 +211,7 @@ class _HomePageState extends State<HomePage> {
                         },
                         child: Text(
                           "Project 2",
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white,fontSize: 20),
                         ),
                       ),
                     ),
